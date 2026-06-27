@@ -1,24 +1,24 @@
-# BEC Speaking Workflow
+# BEC 口语训练流程
 
-## Default Training Order
+## 默认训练顺序
 
-Use this order for a learner rebuilding BEC speaking ability:
+学习者重新建立 BEC 口语能力时，使用这个顺序：
 
-1. Part 2 mini-presentation: build structured, independent speaking.
-2. Part 1 interview: build short, natural answers.
-3. Part 3 collaborative task: build interaction, negotiation, and summarizing.
+1. Part 2 mini-presentation：先建立结构化独立表达。
+2. Part 1 interview：再训练短问短答和自然回应。
+3. Part 3 collaborative task：最后训练互动、协商和总结。
 
 ## Part 2 Mini-Presentation
 
-Goal: give a short structured answer with clear points and supporting details.
+目标：用清晰结构表达观点，并给出理由和细节。
 
-Use the notes trilogy:
+使用 notes 三部曲：
 
-1. Decide the target: what the answer should achieve.
-2. List topic-sentence keywords: two or three main reasons.
-3. Add supporting details: examples, business impact, risks, or trade-offs.
+1. 决定表达目标：这道题到底要证明什么。
+2. 列出主题句关键词：两到三个主要理由。
+3. 增加支撑细节：例子、商业影响、风险或取舍。
 
-Coach structure:
+教练结构：
 
 ```text
 Opening: When it comes to..., there are several factors to consider.
@@ -29,39 +29,39 @@ Support: For example...
 Closing: Overall, ...
 ```
 
-For Level 1 guided practice, show a complete but short model answer before the learner answers:
+Level 1 引导练习时，先给完整但较短的参考答案：
 
 ```text
 Question: What should a company consider when recruiting new staff?
 
-Answer direction:
-You can talk about relevant experience and communication skills.
+答题方向：
+可以谈 relevant experience 和 communication skills。
 
 Model answer:
 When recruiting new staff, a company should consider several important factors. First, relevant experience is important because experienced candidates can usually adapt to the job more quickly. Second, communication skills also matter, especially if the role involves teamwork or client contact. For example, a candidate who can explain ideas clearly may help the team work more efficiently. Overall, companies should choose people who can do the job well and work smoothly with others.
 
-Now adapt it:
-Replace "relevant experience" and "communication skills" with two ideas of your own.
+你的任务：
+把 relevant experience 和 communication skills 替换成你自己的两个观点。
 ```
 
-Assess whether the learner has:
+检查学习者是否做到：
 
-- a direct answer to the question
-- two clear points
-- business-specific examples
-- a short closing sentence
+- 直接回答题目
+- 有两个清晰观点
+- 有商务相关例子
+- 有简短收尾句
 
 ## Part 1 Interview
 
-Goal: answer briefly, naturally, and specifically.
+目标：回答简短、自然、具体。
 
-Use a 3-part answer:
+使用三段式短答：
 
 ```text
-Direct answer + reason + example or detail
+直接回答 + 理由 + 例子或细节
 ```
 
-For Level 1 guided practice, give a model and ask the learner to replace details:
+Level 1 引导练习时，先给参考答案并要求替换细节：
 
 ```text
 Question: How important is teamwork in your work?
@@ -69,13 +69,13 @@ Question: How important is teamwork in your work?
 Model answer:
 Teamwork is very important in my work because most tasks require coordination with other people. For example, when we are working on a project, clear communication helps us avoid delays and misunderstandings.
 
-Now adapt it:
-Replace "working on a project" with a real or imagined work situation.
+你的任务：
+把 working on a project 替换成一个真实或假设的工作场景。
 ```
 
-Avoid long memorized answers. Ask follow-up questions to make the answer more natural.
+避免长篇背诵。用追问让答案更自然。
 
-Typical prompts:
+常见题目：
 
 - What kind of company would you like to work for?
 - How important is teamwork in your work?
@@ -84,17 +84,17 @@ Typical prompts:
 
 ## Part 3 Collaborative Task
 
-Goal: interact, invite, agree or disagree politely, develop ideas, and summarize.
+目标：互动、邀请、同意或礼貌反驳、展开观点并总结。
 
-Coach the learner to use five moves:
+训练学习者使用五个动作：
 
-1. Open: invite the other person into the topic.
-2. Propose: make a clear suggestion.
-3. Respond: agree, add, or politely challenge.
-4. Develop: give a reason, example, or consequence.
-5. Close: summarize a shared decision.
+1. 打开话题：邀请对方进入讨论。
+2. 提出建议：给出清晰观点。
+3. 回应对方：同意、补充或礼貌挑战。
+4. 展开理由：给出原因、例子或后果。
+5. 总结共识：形成共同决定。
 
-Useful interaction frame:
+可用互动框架：
 
 ```text
 To begin with, what do you think about...?
@@ -103,9 +103,9 @@ That's a good point. My concern is...
 So, shall we say that the best option is...?
 ```
 
-When roleplaying, act as Candidate B. Keep each turn short and leave room for the learner.
+角色扮演时，教练扮演 Candidate B。每轮发言保持短，给学习者留下回应空间。
 
-For Level 1 guided practice, show a mini-dialogue before roleplay:
+Level 1 引导练习时，先展示一段 mini-dialogue：
 
 ```text
 Task:
@@ -117,25 +117,25 @@ B: I think the main problem is that information is not shared quickly enough.
 A: That's a good point. Maybe we should introduce a weekly update meeting.
 B: I agree, and we could also use a shared online document to keep everyone informed.
 
-Now roleplay:
-The learner plays A. The coach plays B. Start with the opening question.
+你的任务：
+学习者扮演 A，教练扮演 B。先从 opening question 开始。
 ```
 
-## Practice Method
+## 练习方法
 
-Use progressive support:
+采用渐进式辅助：
 
-1. Level 1: show a short model answer first, then ask the learner to imitate and adapt it.
-2. Level 2: show answer directions, keywords, and sentence starters first; show the model answer after the learner's attempt.
-3. Level 3: show only the question first; give the model answer after feedback.
+1. Level 1：先展示短参考答案，再让学习者模仿和替换。
+2. Level 2：先展示答题方向、关键词和句型开头；学习者作答后再给参考答案。
+3. Level 3：先只展示题目；反馈后再给参考答案。
 
-Prefer active recall once the learner has enough input:
+学习者有足够输入后，再强调主动回忆：
 
-1. The learner reads the question.
-2. The learner makes quick notes.
-3. The learner answers without reading a full script.
-4. The learner records or types the answer.
-5. The coach identifies missed points and language upgrades.
-6. The learner tries a second answer.
+1. 阅读题目。
+2. 快速写 notes。
+3. 不看完整稿直接回答。
+4. 录音或输入答案。
+5. 教练指出遗漏点和语言升级点。
+6. 学习者尝试第二遍。
 
-Do not force independent production too early. Early confidence matters more than exam-like pressure.
+不要过早强迫独立输出。早期建立信心比考试压力更重要。

@@ -1,121 +1,121 @@
-# 72-Day BEC Speaking Rotation
+# 72 天 BEC 口语轮换计划
 
-Use this as the default long-running study plan for daily Business English reminders.
+这是每日商务英语提醒默认使用的长期练习计划。
 
-## Overall Structure
+## 总体结构
 
-Run three 24-day rounds:
+共三轮，每轮 24 天：
 
-1. Days 1-24: Level 1, show a short model answer first; the learner imitates and adapts.
-2. Days 25-48: Level 2, show answer direction, keywords, and sentence starters first; show the model answer after the learner's first attempt.
-3. Days 49-72: Level 3, show only the prompt first; give feedback and a model answer afterward.
+1. Day 1-24：Level 1，先给短参考答案，学习者模仿和替换。
+2. Day 25-48：Level 2，先给答题方向、关键词和句型开头，学习者第一次作答后再给参考答案。
+3. Day 49-72：Level 3，先只给题目，学习者独立作答后再反馈和给参考答案。
 
-Use this BEC part order in every 24-day round:
+每一轮 24 天都按这个 BEC Part 顺序：
 
-1. Days 1-8 of the round: Part 2 mini-presentation
-2. Days 9-16 of the round: Part 1 interview
-3. Days 17-24 of the round: Part 3 collaborative task
+1. 本轮第 1-8 天：Part 2 mini-presentation，简短发言
+2. 本轮第 9-16 天：Part 1 interview，问答
+3. 本轮第 17-24 天：Part 3 collaborative task，协作讨论
 
-Use this topic order in every 8-day block:
+每个 8 天小周期都按这个主题顺序轮换：
 
-1. Company operations and management
-2. Human resource management
-3. Marketing
-4. Business travel
-5. Corporate public relations
-6. Company development
-7. E-commerce and new ways of working
-8. Business meetings
+1. 公司运作与管理
+2. 人力资源管理
+3. 市场营销
+4. 商务旅行
+5. 企业公关
+6. 公司发展
+7. 电子商务与新型工作方式
+8. 商务会议
 
-## Day-To-Day Plan
+## 每日计划
 
-### Round 1: Days 1-24, Level 1
+### 第一轮：Day 1-24，Level 1
 
-| Day | Part | Topic | Focus |
+| 天数 | Part | 主题 | 训练重点 |
 |---|---|---|---|
-| 1 | Part 2 | Company operations and management | Explain two qualities or factors clearly |
-| 2 | Part 2 | Human resource management | Explain selection criteria |
-| 3 | Part 2 | Marketing | Explain benefits and risks |
-| 4 | Part 2 | Business travel | Compare advantages and preparation needs |
-| 5 | Part 2 | Corporate public relations | Explain trust, image, and transparency |
-| 6 | Part 2 | Company development | Explain expansion, innovation, or risk |
-| 7 | Part 2 | E-commerce and new ways of working | Explain remote work or online business |
-| 8 | Part 2 | Business meetings | Explain what makes a meeting effective |
-| 9 | Part 1 | Company operations and management | Give a 30-45 second answer |
-| 10 | Part 1 | Human resource management | Use direct answer + reason + example |
-| 11 | Part 1 | Marketing | Express a personal preference |
-| 12 | Part 1 | Business travel | Connect the answer with experience |
-| 13 | Part 1 | Corporate public relations | State a concise opinion |
-| 14 | Part 1 | Company development | Discuss career or company choices |
-| 15 | Part 1 | E-commerce and new ways of working | Talk about online collaboration |
-| 16 | Part 1 | Business meetings | Talk about meeting habits |
-| 17 | Part 3 | Company operations and management | Open the discussion and invite the partner |
-| 18 | Part 3 | Human resource management | Make suggestions and respond |
-| 19 | Part 3 | Marketing | Agree and add a point |
-| 20 | Part 3 | Business travel | Disagree politely |
-| 21 | Part 3 | Corporate public relations | Handle different opinions |
-| 22 | Part 3 | Company development | Weigh options |
-| 23 | Part 3 | E-commerce and new ways of working | Move the discussion forward |
-| 24 | Part 3 | Business meetings | Summarize agreement |
+| Day 1 | Part 2 | 公司运作与管理 | 清楚解释两个品质或因素 |
+| Day 2 | Part 2 | 人力资源管理 | 解释选择标准 |
+| Day 3 | Part 2 | 市场营销 | 解释收益和风险 |
+| Day 4 | Part 2 | 商务旅行 | 对比优势和准备事项 |
+| Day 5 | Part 2 | 企业公关 | 解释信任、形象和透明度 |
+| Day 6 | Part 2 | 公司发展 | 解释扩张、创新或风险 |
+| Day 7 | Part 2 | 电子商务与新型工作方式 | 解释远程工作或线上业务 |
+| Day 8 | Part 2 | 商务会议 | 解释高效会议的关键 |
+| Day 9 | Part 1 | 公司运作与管理 | 给出 30-45 秒自然短答 |
+| Day 10 | Part 1 | 人力资源管理 | 使用「直接回答 + 理由 + 例子」 |
+| Day 11 | Part 1 | 市场营销 | 表达个人偏好 |
+| Day 12 | Part 1 | 商务旅行 | 结合经验回答 |
+| Day 13 | Part 1 | 企业公关 | 简洁表达观点 |
+| Day 14 | Part 1 | 公司发展 | 讨论职业或公司选择 |
+| Day 15 | Part 1 | 电子商务与新型工作方式 | 谈线上协作 |
+| Day 16 | Part 1 | 商务会议 | 谈会议习惯 |
+| Day 17 | Part 3 | 公司运作与管理 | 打开讨论并邀请对方 |
+| Day 18 | Part 3 | 人力资源管理 | 提建议并回应对方 |
+| Day 19 | Part 3 | 市场营销 | 表达同意并补充观点 |
+| Day 20 | Part 3 | 商务旅行 | 礼貌表达不同意见 |
+| Day 21 | Part 3 | 企业公关 | 处理观点分歧 |
+| Day 22 | Part 3 | 公司发展 | 权衡不同选项 |
+| Day 23 | Part 3 | 电子商务与新型工作方式 | 推进讨论 |
+| Day 24 | Part 3 | 商务会议 | 总结共识 |
 
-### Round 2: Days 25-48, Level 2
+### 第二轮：Day 25-48，Level 2
 
-Repeat the same Part and topic sequence from Round 1. Increase difficulty by withholding the full model answer until after the learner's first attempt.
+重复第一轮的 Part 和主题顺序，但提高难度：学习者第一次作答前不展示完整参考答案。
 
-Use the same focus as the matching day in Round 1:
+训练重点与第一轮对应天数相同：
 
-- Day 25 repeats Day 1's Part/topic/focus at Level 2.
-- Day 26 repeats Day 2's Part/topic/focus at Level 2.
-- Continue until Day 48 repeats Day 24's Part/topic/focus at Level 2.
+- Day 25 复用 Day 1 的 Part / 主题 / 重点，但用 Level 2。
+- Day 26 复用 Day 2 的 Part / 主题 / 重点，但用 Level 2。
+- 依此类推，直到 Day 48 复用 Day 24 的 Part / 主题 / 重点。
 
-### Round 3: Days 49-72, Level 3
+### 第三轮：Day 49-72，Level 3
 
-Repeat the same Part and topic sequence from Round 1. Increase difficulty by giving only the prompt first.
+重复第一轮的 Part 和主题顺序，但提高到考试式练习：先只给题目。
 
-Use the same focus as the matching day in Round 1:
+训练重点与第一轮对应天数相同：
 
-- Day 49 repeats Day 1's Part/topic/focus at Level 3.
-- Day 50 repeats Day 2's Part/topic/focus at Level 3.
-- Continue until Day 72 repeats Day 24's Part/topic/focus at Level 3.
+- Day 49 复用 Day 1 的 Part / 主题 / 重点，但用 Level 3。
+- Day 50 复用 Day 2 的 Part / 主题 / 重点，但用 Level 3。
+- 依此类推，直到 Day 72 复用 Day 24 的 Part / 主题 / 重点。
 
-## Prompt Selection Rules
+## 出题规则
 
-For each day:
+每天按以下步骤出题：
 
-1. Select the BEC part from the rotation.
-2. Select the topic from the 8-topic cycle.
-3. Pick or write one prompt from `bec-topic-bank.md`.
-4. Match the support level to the round.
-5. Keep the session narrow enough for 20 minutes.
+1. 根据轮换计划确定 BEC Part。
+2. 根据 8 主题周期确定主题。
+3. 从 `bec-topic-bank.md` 选择或改写一个题目。
+4. 根据所在轮次匹配辅助等级。
+5. 把练习控制在 20 分钟内，只练一个清晰目标。
 
-Do not skip directly to Level 3 unless the user asks for exam-style practice.
+不要在学习者还不熟悉时直接跳到 Level 3，除非用户明确要求考试式练习。
 
-## Example Day 1
+## Day 1 示例
 
 ```text
-Part: Part 2 mini-presentation
-Topic: Company operations and management
-Support level: Level 1
-Prompt: What qualities should a good team leader have?
-Focus: Opening + Point 1 + Point 2 + Closing
+Part：Part 2 mini-presentation
+主题：公司运作与管理
+辅助等级：Level 1
+题目：What qualities should a good team leader have?
+重点：Opening + Point 1 + Point 2 + Closing
 ```
 
-## Example Day 25
+## Day 25 示例
 
 ```text
-Part: Part 2 mini-presentation
-Topic: Company operations and management
-Support level: Level 2
-Prompt: What qualities should a good team leader have?
-Focus: Opening + Point 1 + Point 2 + Closing
+Part：Part 2 mini-presentation
+主题：公司运作与管理
+辅助等级：Level 2
+题目：What qualities should a good team leader have?
+重点：Opening + Point 1 + Point 2 + Closing
 ```
 
-## Example Day 49
+## Day 49 示例
 
 ```text
-Part: Part 2 mini-presentation
-Topic: Company operations and management
-Support level: Level 3
-Prompt: What qualities should a good team leader have?
-Focus: Exam-style independent answer
+Part：Part 2 mini-presentation
+主题：公司运作与管理
+辅助等级：Level 3
+题目：What qualities should a good team leader have?
+重点：考试式独立回答
 ```

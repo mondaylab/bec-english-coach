@@ -1,79 +1,79 @@
-# Daily Session Template
+# 每日训练模板
 
-Use this template to run or record a 20-minute session.
+用这个模板运行或记录 20 分钟训练。
 
-## Session Flow
+## 训练流程
 
 ```markdown
-# Business English Daily Practice
+# 商务英语每日练习
 
-Date:
-Focus:
-BEC Part:
-Topic:
+日期：
+训练重点：
+BEC Part：
+主题：
 
-## Prompt
+## 题目
 
-## Answer Direction
+## 答题方向
 
-## Useful Expressions
+## 可用表达
 
-## Model Answer
+## 参考答案
 
-Use in Level 1 before the learner answers. In Level 2 or Level 3, move this after the first attempt.
+Level 1 时在学习者作答前展示。Level 2 或 Level 3 时，放到第一次作答之后展示。
 
 ## Quick Notes
 
-## Learner's Guided Attempt
+## 学习者引导作答
 
-## Feedback
+## 反馈
 
-What worked:
+做得好的地方：
 
-Priority fix:
+优先修正点：
 
-Better business English:
+更自然的商务英语：
 
-Pattern to remember:
+记住这个模式：
 
-## Second Attempt
+## 第二遍尝试
 
-## Today's Card
+## 今日卡片
 
-Useful expressions:
+可用表达：
 
-Common mistake:
+常见错误：
 
-Next drill:
+下次练习：
 ```
 
-## Compact Learning Card
+## 简短学习卡片
 
-Use this after a session:
+训练结束后使用：
 
 ```markdown
-## Day X - Topic - Focus
+## Day X - 主题 - 训练重点
 
-Scenario:
+场景：
 
-Best upgraded sentence:
+今日最佳升级句：
 
-Useful expressions:
+可用表达：
 - 
 - 
 - 
 
-My common mistake:
+我的常见错误：
 
-Next drill:
+下次练习：
 ```
 
-## Morning Prompt
+## 早晨提醒开场
 
-When the user wants a morning session, start with:
+用户要晨间练习时，用这个开场：
 
 ```text
-早上好。今天我们练一个 20 分钟 BEC/商务英语小回合。
+早上好。今天我们练一个 20 分钟 BEC / 商务英语小回合。
 今天主题是：[topic]。
 今天我先给你一个短参考答案，你不用背，先看它怎么组织。
 然后你只需要替换 2-3 个信息，做一个自己的版本。

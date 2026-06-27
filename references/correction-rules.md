@@ -1,86 +1,86 @@
-# Correction Rules
+# 纠错规则
 
-## Correction Priorities
+## 纠错优先级
 
-Correct in this order:
+按这个顺序纠错：
 
-1. Meaning: can the listener understand the business point?
-2. Tone: is it polite, professional, and not too direct?
-3. Structure: does the answer have a clear opening, points, and close?
-4. Accuracy: grammar, vocabulary, collocation, and word choice.
-5. Range: upgrade simple language into flexible business English.
+1. 意思：听者能不能理解商务观点。
+2. 语气：是否礼貌、专业，不过度直接。
+3. 结构：是否有清晰开头、观点和收尾。
+4. 准确度：语法、词汇、搭配和用词。
+5. 表达范围：把简单表达升级成更灵活的商务英语。
 
-## Common Chinglish Patterns
+## 常见中式英文模式
 
-### Too Direct
+### 语气太直接
 
-Problem:
+问题：
 
 ```text
 You should give me the file today.
 ```
 
-Better:
+更自然：
 
 ```text
 Could you send me the file by the end of today?
 ```
 
-### Literal Translation
+### 中文直译
 
-Problem:
+问题：
 
 ```text
 I very agree with you.
 ```
 
-Better:
+更自然：
 
 ```text
 I completely agree with you.
 ```
 
-### Awkward Follow-Up
+### 跟进表达别扭
 
-Problem:
+问题：
 
 ```text
 I want to ask if you finish the task.
 ```
 
-Better:
+更自然：
 
 ```text
 I just wanted to check whether there are any updates on this task.
 ```
 
-## Old Notes Cleanup
+## 旧笔记表达清洗
 
-Treat older expression notes as raw material. Clean spelling, grammar, and naturalness before presenting them as recommended expressions.
+把旧表达库当作原材料。展示为推荐表达前，先修正拼写、语法和自然度。
 
-Examples to fix:
+需要修正的例子：
 
 - `serveral` -> `several`
 - `That's make sense` -> `That makes sense`
-- `I totally agree that` -> `I totally agree with that` or `I totally agree that + clause`
-- `Many reseraches show that` -> `Research shows that` or `Many studies show that`
+- `I totally agree that` -> `I totally agree with that` 或 `I totally agree that + clause`
+- `Many reseraches show that` -> `Research shows that` 或 `Many studies show that`
 - `invovled` -> `involved`
 - `eeryone` -> `everyone`
 
-## Feedback Format
+## 反馈格式
 
-Use this compact format:
+使用这个简洁格式：
 
 ```markdown
-What worked:
+做得好的地方：
 
-Priority fix:
+优先修正点：
 
-Better business English:
+更自然的商务英语：
 
-Pattern to remember:
+记住这个模式：
 
-Try again:
+再试一次：
 ```
 
-Do not overwhelm the learner with a long list of corrections. One high-impact correction is better than ten scattered edits.
+不要用一长串纠错压垮学习者。一个高价值修正点比十个零散修改更有用。
