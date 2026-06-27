@@ -1,0 +1,4 @@
+interface:
+  display_name: "Business English Coach"
+  short_description: "BEC speaking and workplace English micro-coach"
+  default_prompt: "Use $business-english-coach to run today's 20-minute BEC speaking practice."
