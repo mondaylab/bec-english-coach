@@ -16,6 +16,14 @@ Business English Coach is a lightweight skill for BEC speaking practice and work
 2. Part 1 interview: improve short, natural answers
 3. Part 3 collaborative task: practice interaction, negotiation, and summarizing
 
+## 72-Day Rotation
+
+- Days 1-24: Level 1, show a model answer first; the learner imitates and adapts.
+- Days 25-48: Level 2, show direction and sentence starters first; show the model answer after the first attempt.
+- Days 49-72: Level 3, exam-style practice; show only the prompt first.
+
+Each 24-day round follows `Part 2 → Part 1 → Part 3`. Within each part, rotate through eight topics: company operations and management, human resource management, marketing, business travel, corporate public relations, company development, e-commerce and new ways of working, and business meetings.
+
 ## Daily 20-Minute Flow
 
 1. 2 minutes: review previous expressions
@@ -46,6 +54,7 @@ Turn today's practice into a learning card.
 
 - `SKILL.md`: main workflow and routing instructions
 - `references/bec-speaking-workflow.md`: BEC speaking session design
+- `references/72-day-rotation.md`: 72-day part, topic, and support-level rotation
 - `references/bec-topic-bank.md`: business topics and starter prompts
 - `references/expression-bank.md`: reusable business expressions
 - `references/correction-rules.md`: correction and cleanup rules

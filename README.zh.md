@@ -16,6 +16,14 @@
 2. Part 1 interview：再练短问短答
 3. Part 3 collaborative task：最后练互动讨论、接话、协商和总结
 
+## 72 天轮换计划
+
+- Day 1-24：Level 1，先给参考答案，你模仿和替换
+- Day 25-48：Level 2，先给方向和句型，你先试答，之后再看答案
+- Day 49-72：Level 3，接近考试，只给题目先答
+
+每 24 天都按 `Part 2 → Part 1 → Part 3` 走；每个 Part 内按 8 个主题轮换：公司运作与管理、人力资源管理、市场营销、商务旅行、企业公关、公司发展、电商与新型工作方式、商务会议。
+
 ## 每日 20 分钟流程
 
 1. 2 分钟：复习昨天表达
@@ -46,6 +54,7 @@
 
 - `SKILL.md`：skill 的主工作流和触发说明
 - `references/bec-speaking-workflow.md`：BEC 口语训练流程
+- `references/72-day-rotation.md`：72 天 Part / 主题 / 难度轮换计划
 - `references/bec-topic-bank.md`：商务主题和题目库
 - `references/expression-bank.md`：常用商务表达
 - `references/correction-rules.md`：纠错和表达清洗规则

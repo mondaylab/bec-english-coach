@@ -15,6 +15,8 @@ Prioritize BEC-style speaking practice when the user has no other preference:
 2. Part 1 interview
 3. Part 3 collaborative task and follow-up discussion
 
+Use the 72-day rotation in `references/72-day-rotation.md` for daily reminders and long-running practice unless the user asks for a different plan.
+
 Use the learner's existing method:
 
 1. Read the prompt.
@@ -87,6 +89,8 @@ Do not overcorrect every sentence. Pick the errors that will transfer to future 
 ## Task Routing
 
 Use `references/bec-speaking-workflow.md` for BEC Part 1, Part 2, and Part 3 session design.
+
+Use `references/72-day-rotation.md` when deciding what day, part, topic, support level, and training focus should come next.
 
 Use `references/bec-topic-bank.md` when selecting business themes or creating prompts.
 
