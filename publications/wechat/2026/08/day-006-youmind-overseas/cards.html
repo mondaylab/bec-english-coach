@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 办公产品出海，需要先找到自己的生态位</title>
+  <style>
+    :root {
+      --blue: #55aef1;
+      --deep-blue: #0984d7;
+      --yellow: #ffd21f;
+      --paper: #f7f6f0;
+      --ink: #121212;
+      --muted: #4a5968;
+      --line: rgba(18, 18, 18, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #e8edf2;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      color: var(--ink);
+    }
+
+    .deck {
+      width: 1080px;
+      margin: 0 auto;
+    }
+
+    .card {
+      position: relative;
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      background: var(--paper);
+      page-break-after: always;
+    }
+
+    .cover {
+      background: linear-gradient(90deg, var(--blue) 0 55%, #f6f5ef 55% 100%);
+    }
+
+    .texture::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.14;
+      background-image:
+        radial-gradient(circle at 20% 10%, rgba(255,255,255,0.65) 0 1px, transparent 2px),
+        radial-gradient(circle at 70% 80%, rgba(0,0,0,0.22) 0 1px, transparent 2px);
+      background-size: 16px 16px, 21px 21px;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+    }
+
+    .cover-title {
+      position: absolute;
+      left: 82px;
+      top: 96px;
+      width: 515px;
+      line-height: 0.93;
+      letter-spacing: 0;
+      z-index: 3;
+    }
+
+    .cover-title .small {
+      display: block;
+      color: var(--deep-blue);
+      font-size: 34px;
+      font-weight: 1000;
+      margin-top: 38px;
+    }
+
+    .cover-title .big {
+      display: block;
+      color: var(--yellow);
+      font-size: 42px;
+      font-weight: 1000;
+      text-shadow: 0 2px 0 rgba(0,0,0,0.06);
+    }
+
+    .cover-title .cn {
+      display: block;
+      margin-top: 0;
+      color: var(--ink);
+      font-size: 106px;
+      font-weight: 900;
+      line-height: 0.98;
+    }
+
+    .cover-title .lead {
+      display: block;
+      color: var(--yellow);
+      font-size: 74px;
+      line-height: 1.03;
+      font-weight: 1000;
+      text-shadow: 0 2px 0 rgba(0,0,0,0.12);
+    }
+
+    .cover-title .lead + .cn {
+      margin-top: 38px;
+    }
+
+    .cover-note {
+      position: absolute;
+      left: 88px;
+      bottom: 104px;
+      width: 440px;
+      color: rgba(18,18,18,0.68);
+      font-size: 26px;
+      line-height: 1.45;
+      font-weight: 650;
+      z-index: 3;
+    }
+
+    .puzzle-area {
+      position: absolute;
+      right: -40px;
+      top: -36px;
+      width: 520px;
+      height: 1420px;
+    }
+
+    .piece {
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      background: #f7f6ef;
+      border: 2px solid rgba(0,0,0,0.18);
+      box-shadow: 0 18px 30px rgba(0,0,0,0.14);
+    }
+
+    .piece::before,
+    .piece::after {
+      content: "";
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: inherit;
+      border: 2px solid rgba(0,0,0,0.18);
+    }
+
+    .piece::before {
+      top: 92px;
+      left: -39px;
+      border-right-color: transparent;
+    }
+
+    .piece::after {
+      right: 91px;
+      bottom: -39px;
+      border-top-color: transparent;
+    }
+
+    .p1 { top: 80px; left: 42px; transform: rotate(5deg); }
+    .p2 { top: 260px; left: 275px; transform: rotate(-8deg); }
+    .p3 { top: 540px; left: 86px; transform: rotate(2deg); }
+    .p4 { top: 790px; left: 276px; transform: rotate(7deg); }
+    .p5 { top: 1040px; left: 24px; transform: rotate(-5deg); }
+
+    .loose-piece {
+      position: absolute;
+      left: 385px;
+      top: 798px;
+      width: 188px;
+      height: 150px;
+      background: #f7f6ef;
+      border-radius: 16px;
+      box-shadow: 0 16px 30px rgba(0,0,0,0.18);
+      transform: rotate(9deg);
+      z-index: 2;
+    }
+
+    .loose-piece::before,
+    .loose-piece::after {
+      content: "";
+      position: absolute;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    .loose-piece::before {
+      left: 58px;
+      top: -31px;
+    }
+
+    .loose-piece::after {
+      left: 58px;
+      bottom: -31px;
+    }
+
+    .content-card {
+      background:
+        linear-gradient(90deg, var(--blue) 0 18px, transparent 18px),
+        var(--paper);
+    }
+
+    .label {
+      position: absolute;
+      top: 72px;
+      left: 78px;
+      font-size: 28px;
+      font-weight: 850;
+      color: var(--deep-blue);
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .num {
+      position: absolute;
+      top: 58px;
+      right: 76px;
+      font-size: 56px;
+      line-height: 1;
+      font-weight: 1000;
+      color: var(--yellow);
+      text-shadow: 2px 2px 0 var(--deep-blue);
+    }
+
+    .title {
+      position: absolute;
+      left: 78px;
+      top: 168px;
+      right: 78px;
+      font-size: 82px;
+      line-height: 1.08;
+      font-weight: 1000;
+      letter-spacing: 0;
+    }
+
+    .highlight {
+      color: var(--deep-blue);
+    }
+
+    .body {
+      position: absolute;
+      left: 82px;
+      right: 82px;
+      top: 466px;
+      font-size: 42px;
+      line-height: 1.52;
+      font-weight: 620;
+      color: #252525;
+    }
+
+    .body p {
+      margin: 0 0 32px;
+    }
+
+    .quote {
+      position: absolute;
+      left: 82px;
+      right: 82px;
+      bottom: 104px;
+      padding: 34px 38px;
+      border-left: 12px solid var(--yellow);
+      background: rgba(85,174,241,0.13);
+      font-size: 34px;
+      line-height: 1.45;
+      font-weight: 720;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 72px;
+      padding: 0 24px;
+      border: 3px solid var(--ink);
+      background: white;
+      box-shadow: 6px 6px 0 var(--yellow);
+      font-size: 32px;
+      font-weight: 850;
+      line-height: 1.15;
+    }
+
+    .mini-puzzle {
+      position: absolute;
+      right: 70px;
+      bottom: 82px;
+      width: 200px;
+      height: 155px;
+      background: var(--blue);
+      opacity: 0.95;
+      transform: rotate(-6deg);
+    }
+
+    .mini-puzzle::before {
+      content: "";
+      position: absolute;
+      left: 72px;
+      top: -28px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--paper);
+    }
+
+    .english {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 34px;
+      line-height: 1.28;
+      font-weight: 950;
+      color: var(--deep-blue);
+      letter-spacing: 0;
+    }
+
+    .strategy-line {
+      font-size: 52px;
+      line-height: 1.42;
+      font-weight: 850;
+      color: #1f1f1f;
+    }
+
+    .footer {
+      position: absolute;
+      left: 82px;
+      right: 82px;
+      bottom: 52px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 25px;
+      font-weight: 760;
+      color: rgba(18,18,18,0.54);
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <section class="card cover texture" id="card-1">
+      <div class="cover-title">
+        <span class="lead">AI 办公<br>产品出海</span>
+        <span class="cn">先找<br>生态位</span>
+        <span class="small">AI OFFICE</span>
+        <span class="big">FINDS NICHE</span>
+      </div>
+      <div class="cover-note">从 YouMind 看 AI 生产力产品的海外验证</div>
+      <div class="loose-piece"></div>
+      <div class="puzzle-area">
+        <div class="piece p1"></div>
+        <div class="piece p2"></div>
+        <div class="piece p3"></div>
+        <div class="piece p4"></div>
+        <div class="piece p5"></div>
+      </div>
+    </section>
+
+    <section class="card content-card texture" id="card-2">
+      <div class="label">Core Insight</div>
+      <div class="num">02</div>
+      <h1 class="title">最难的一定不是<span class="highlight">英文版</span></h1>
+      <div class="body">
+        <p>办公产品出海，最先需要验证的是：海外用户会不会把它放进每天真实发生的工作里。</p>
+        <p>只做英文界面不够。用户已经有自己的资料收集、整理、写作和协作习惯。</p>
+      </div>
+      <div class="quote">新的产品必须让用户感觉：放进去之后，自己的工作真的少绕了一步。</div>
+      <div class="footer"><span>Business Strategy Extension</span><span>YouMind / Day006</span></div>
+    </section>
+
+    <section class="card content-card texture" id="card-3">
+      <div class="label">Question 01</div>
+      <div class="num">03</div>
+      <h1 class="title">海外用户真的需要一个 <span class="highlight">AI workspace</span> 吗？</h1>
+      <div class="body">
+        <p>不能只问“这个产品够不够智能”。</p>
+        <p>更具体的问题是：他们现在有没有相似痛点？这个痛点是不是高频？是否强到值得换工具？</p>
+        <div class="chips">
+          <span class="chip">研究</span>
+          <span class="chip">阅读</span>
+          <span class="chip">收藏</span>
+          <span class="chip">整理</span>
+          <span class="chip">写作</span>
+        </div>
+      </div>
+      <div class="mini-puzzle"></div>
+      <div class="footer"><span>User Adoption</span><span>用户采用</span></div>
+    </section>
+
+    <section class="card content-card texture" id="card-4">
+      <div class="label">Question 02</div>
+      <div class="num">04</div>
+      <h1 class="title">它要替代谁，或者<span class="highlight">补上哪一块</span>？</h1>
+      <div class="body">
+        <p>海外用户可能已经在用很多工具。</p>
+        <div class="chips">
+          <span class="chip">Notion</span>
+          <span class="chip">Readwise</span>
+          <span class="chip">Obsidian</span>
+          <span class="chip">Google Docs</span>
+        </div>
+        <p style="margin-top:42px;">YouMind 找到了自己的位置：<br>不教育用户说“我也能做”<br>而核心突破点在于为用户讲清楚“我在哪一步更省事”</p>
+      </div>
+      <div class="footer"><span>Local Competition</span><span>已有替代方案</span></div>
+    </section>
+
+    <section class="card content-card texture" id="card-5">
+      <div class="label">Question 03</div>
+      <div class="num">05</div>
+      <h1 class="title">生态位来自<span class="highlight">具体流程</span></h1>
+      <div class="body">
+        <p>对 YouMind 来说，生态位不是一句“AI 知识管理”。</p>
+        <p>落在更具体的链路里来看，YouMind解决了：用户如何收集资料，如何组织信息，如何把想法变成内容。</p>
+        <div class="chips">
+          <span class="chip">Collect</span>
+          <span class="chip">Organize</span>
+          <span class="chip">Create</span>
+          <span class="chip">Publish</span>
+        </div>
+      </div>
+      <div class="quote">生态位越具体，用户越容易判断它值不值得留下。</div>
+      <div class="footer"><span>Workflow Integration</span><span>流程嵌入</span></div>
+    </section>
+
+    <section class="card content-card texture" id="card-6">
+      <div class="label">Question 04</div>
+      <div class="num">06</div>
+      <h1 class="title">效率提升要具体到<span class="highlight">愿意付费</span></h1>
+      <div class="body">
+        <p>海外市场不是只看产品新不新。</p>
+        <p>用户最后会问：它能不能帮我少开几个工具？少整理一次资料？更快写出一篇东西？</p>
+        <p>如果答案足够具体，付费才有可能成立。</p>
+      </div>
+      <div class="quote">Willingness to pay 不是价格问题，先是价值是否足够清楚。</div>
+      <div class="footer"><span>Willingness To Pay</span><span>付费意愿</span></div>
+    </section>
+
+    <section class="card content-card texture" id="card-7">
+      <div class="label">Strategy Sentence</div>
+      <div class="num">07</div>
+      <h1 class="title">一句话说清 YouMind <span class="highlight">出海策略</span></h1>
+      <div class="body strategy-line">
+        YouMind 出海要验证的是它能不能进入用户已经形成的研究、阅读和内容生产工作流，而不单单是海外用户会不会用 AI。
+      </div>
+      <div class="quote english">YouMind should validate user adoption, workflow integration, and willingness to pay before scaling overseas.</div>
+      <div class="footer"><span>Go-To-Market Thinking</span><span>YouMind / Day006</span></div>
+    </section>
+
+    <section class="card content-card texture" id="card-8">
+      <div class="label">Think Further</div>
+      <div class="num">08</div>
+      <h1 class="title">如果你也在看 AI 办公产品出海</h1>
+      <div class="body">
+        <p>可以先问自己四个问题：</p>
+        <div class="chips">
+          <span class="chip">谁会用？</span>
+          <span class="chip">替代谁？</span>
+          <span class="chip">嵌进哪一步？</span>
+          <span class="chip">为什么付费？</span>
+        </div>
+        <p style="margin-top:56px;">如果这四个问题暂时回答不清楚，英文版、支付、渠道和增长动作，可能都还只是表层动作。</p>
+      </div>
+      <div class="quote">先找到生态位，再谈规模化。</div>
+      <div class="footer"><span>MondayLab</span><span>Business English Coach</span></div>
+    </section>
+</main>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const only = params.get("card");
+    if (only) {
+      document.querySelectorAll(".card").forEach((card) => {
+        card.style.display = card.id === `card-${only}` ? "block" : "none";
+      });
+    }
+  </script>
+</body>
+</html>
