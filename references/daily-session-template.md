@@ -153,8 +153,15 @@ Level 1 时在学习者作答前展示。Level 2 或 Level 3 时，放到第一�
 
 飞书文档链接：
 
-飞书栏目：
+飞书栏目：https://jwf86xh1hew.feishu.cn/wiki/W2NYwEFZxi9JADky5NdcHqWpnpH
 ````
+
+## 仓库同步规则
+
+- 练习答案确认后，写入 `practice/YYYY/MM/YYYY-MM-DD-day-XXX.md`，并更新 `practice/index.md` 和 `practice/learner-profile.md`。
+- 公众号标题、正文草稿或图文卡片文字确认后，写入 `publications/wechat/YYYY/MM/{day-slug}/article.md`。
+- 飞书文档创建后，同步标题、栏目链接和文档链接到当天 practice 记录和 publication 记录。
+- 图片生成后，同步 card-01 到 card-08 的本地路径和飞书插入状态。
 
 ## 简短学习卡片
 
