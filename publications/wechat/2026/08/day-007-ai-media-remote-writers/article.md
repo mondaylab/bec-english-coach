@@ -139,10 +139,23 @@ AI 媒体真正要想清楚的 4 个问题
 
 ## 三、版式与图片状态
 
-版式参考：待用户提供
+版式参考：用户提供的米色桌面文件夹风格参考图
 
-图片状态：未生成
+图片状态：已生成
 
 飞书栏目：https://jwf86xh1hew.feishu.cn/wiki/W2NYwEFZxi9JADky5NdcHqWpnpH
 
 飞书文档：https://jwf86xh1hew.feishu.cn/docx/YBzidqKpvoxut1x9iBVcO4m6nBe
+
+本地图片路径：
+
+```text
+publications/wechat/2026/08/day-007-ai-media-remote-writers/card-01.png
+publications/wechat/2026/08/day-007-ai-media-remote-writers/card-02.png
+publications/wechat/2026/08/day-007-ai-media-remote-writers/card-03.png
+publications/wechat/2026/08/day-007-ai-media-remote-writers/card-04.png
+publications/wechat/2026/08/day-007-ai-media-remote-writers/card-05.png
+publications/wechat/2026/08/day-007-ai-media-remote-writers/card-06.png
+publications/wechat/2026/08/day-007-ai-media-remote-writers/card-07.png
+publications/wechat/2026/08/day-007-ai-media-remote-writers/card-08.png
+```

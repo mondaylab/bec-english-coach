@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 媒体公司，为什么需要远程撰稿人？</title>
+  <style>
+    :root {
+      --paper: #f7f1e6;
+      --paper-light: #fffaf1;
+      --ink: #202020;
+      --muted: #6e665d;
+      --blue: #8ab8c7;
+      --blue-dark: #4f8798;
+      --yellow: #f3c63d;
+      --green: #93ad67;
+      --pink: #e97783;
+      --coral: #f2664f;
+      --line: rgba(43, 38, 32, 0.12);
+      --shadow: rgba(43, 38, 32, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ded8cc;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+    }
+
+    .deck {
+      width: 1080px;
+      margin: 0 auto;
+    }
+
+    .card {
+      position: relative;
+      width: 1080px;
+      height: 1440px;
+      overflow: hidden;
+      page-break-after: always;
+      background:
+        radial-gradient(circle at 50% 44%, rgba(255,255,255,0.95), rgba(255,255,255,0.28) 22%, transparent 48%),
+        linear-gradient(145deg, #fbf6ec 0%, var(--paper) 44%, #eee5d7 100%);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.34;
+      background-image:
+        radial-gradient(circle at 8% 16%, rgba(255,255,255,0.92) 0 5px, transparent 7px),
+        radial-gradient(circle at 80% 10%, rgba(255,255,255,0.85) 0 4px, transparent 6px),
+        radial-gradient(circle at 76% 80%, rgba(255,255,255,0.78) 0 3px, transparent 5px),
+        radial-gradient(circle at 22% 88%, rgba(255,255,255,0.7) 0 2px, transparent 4px),
+        linear-gradient(70deg, transparent 0 45%, rgba(255,255,255,0.45) 46%, transparent 48% 100%);
+      background-size: 360px 420px, 500px 380px, 420px 520px, 380px 460px, 280px 280px;
+      pointer-events: none;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.12;
+      background-image:
+        radial-gradient(circle, rgba(30, 26, 21, 0.42) 0 1px, transparent 1.6px);
+      background-size: 14px 14px;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+    }
+
+    .meta {
+      position: absolute;
+      left: 70px;
+      top: 60px;
+      z-index: 4;
+      color: var(--muted);
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .page {
+      position: absolute;
+      right: 70px;
+      top: 54px;
+      z-index: 4;
+      color: var(--muted);
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    .title {
+      position: absolute;
+      left: 74px;
+      right: 74px;
+      top: 150px;
+      z-index: 5;
+      font-size: 76px;
+      line-height: 1.08;
+      font-weight: 1000;
+      letter-spacing: 0;
+    }
+
+    .title .line {
+      display: block;
+    }
+
+    .cover .title {
+      top: 104px;
+      width: 720px;
+      font-size: 94px;
+      line-height: 1.03;
+    }
+
+    .title.medium {
+      font-size: 72px;
+      line-height: 1.12;
+    }
+
+    .title .accent {
+      color: var(--blue-dark);
+    }
+
+    .subtitle {
+      position: absolute;
+      left: 78px;
+      right: 78px;
+      top: 430px;
+      z-index: 5;
+      color: #403a34;
+      font-size: 34px;
+      line-height: 1.42;
+      font-weight: 760;
+    }
+
+    .cover .subtitle {
+      top: 450px;
+      width: 550px;
+      font-size: 38px;
+    }
+
+    .body {
+      position: absolute;
+      left: 78px;
+      right: 78px;
+      top: 440px;
+      z-index: 6;
+      color: #312d28;
+      font-size: 42px;
+      line-height: 1.5;
+      font-weight: 660;
+    }
+
+    .body.small {
+      font-size: 38px;
+    }
+
+    .body strong {
+      color: var(--blue-dark);
+      font-weight: 1000;
+    }
+
+    .panel {
+      position: absolute;
+      left: 72px;
+      right: 72px;
+      bottom: 128px;
+      z-index: 5;
+      min-height: 340px;
+      padding: 44px 46px;
+      border: 1px solid rgba(255,255,255,0.72);
+      border-radius: 32px;
+      background: rgba(255,250,241,0.72);
+      box-shadow:
+        0 22px 48px rgba(46, 40, 31, 0.13),
+        inset 0 1px 0 rgba(255,255,255,0.82);
+      backdrop-filter: blur(4px);
+    }
+
+    .panel-title {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: 850;
+    }
+
+    .panel-text {
+      margin: 0;
+      color: #25221f;
+      font-size: 42px;
+      line-height: 1.38;
+      font-weight: 780;
+    }
+
+    .quote {
+      color: #24211e;
+      font-size: 38px;
+      line-height: 1.42;
+      font-weight: 780;
+    }
+
+    .translation {
+      margin-top: 28px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 31px;
+      line-height: 1.42;
+      font-weight: 680;
+    }
+
+    .footer {
+      position: absolute;
+      left: 70px;
+      right: 70px;
+      bottom: 48px;
+      z-index: 7;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--muted);
+      font-size: 23px;
+      font-weight: 720;
+    }
+
+    .folder {
+      position: absolute;
+      z-index: 3;
+      width: 172px;
+      height: 118px;
+      border-radius: 13px 13px 18px 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.22), transparent 20%), var(--blue);
+      box-shadow:
+        0 22px 34px rgba(48, 42, 33, 0.16),
+        inset 0 4px 0 rgba(255,255,255,0.28),
+        inset 0 -9px 16px rgba(0,0,0,0.07);
+    }
+
+    .folder::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -18px;
+      width: 72px;
+      height: 32px;
+      border-radius: 12px 14px 0 0;
+      background: color-mix(in srgb, currentColor 12%, var(--blue));
+    }
+
+    .folder.yellow,
+    .folder.yellow::before {
+      background-color: var(--yellow);
+    }
+
+    .folder.blue,
+    .folder.blue::before {
+      background-color: var(--blue);
+    }
+
+    .folder.green,
+    .folder.green::before {
+      background-color: var(--green);
+    }
+
+    .folder.pink,
+    .folder.pink::before {
+      background-color: var(--pink);
+    }
+
+    .folder.big {
+      width: 242px;
+      height: 166px;
+      border-radius: 18px 18px 24px 24px;
+    }
+
+    .folder.big::before {
+      top: -24px;
+      width: 98px;
+      height: 44px;
+      border-radius: 18px 18px 0 0;
+    }
+
+    .file-label {
+      position: absolute;
+      z-index: 4;
+      color: #4b4540;
+      font-size: 24px;
+      line-height: 1.16;
+      font-weight: 760;
+      text-align: center;
+      white-space: pre-line;
+    }
+
+    .selected {
+      padding: 6px 10px;
+      border-radius: 8px;
+      color: #fff;
+      background: rgba(81, 82, 84, 0.74);
+    }
+
+    .desk {
+      position: absolute;
+      z-index: 2;
+      right: 96px;
+      bottom: 194px;
+      width: 360px;
+      height: 216px;
+      transform: rotate(-8deg);
+    }
+
+    .laptop {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 310px;
+      height: 174px;
+      border-radius: 18px 18px 10px 10px;
+      background:
+        linear-gradient(145deg, #f6f7f5, #cfd4d0);
+      box-shadow: 0 24px 38px rgba(46,40,31,0.18);
+      transform: skewX(-14deg);
+    }
+
+    .laptop::before {
+      content: "";
+      position: absolute;
+      left: 28px;
+      top: 22px;
+      width: 240px;
+      height: 112px;
+      border-radius: 8px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.62), rgba(255,255,255,0.22)),
+        #2b3034;
+    }
+
+    .laptop::after {
+      content: "";
+      position: absolute;
+      right: -28px;
+      bottom: -30px;
+      width: 330px;
+      height: 34px;
+      border-radius: 8px;
+      background: linear-gradient(180deg, #e6e7e3, #b9beb9);
+      box-shadow: 0 14px 22px rgba(46,40,31,0.12);
+    }
+
+    .person {
+      position: absolute;
+      z-index: 3;
+      left: 390px;
+      bottom: 252px;
+      width: 178px;
+      height: 260px;
+    }
+
+    .person::before {
+      content: "";
+      position: absolute;
+      left: 62px;
+      top: 0;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: #c79c75;
+      box-shadow: -20px 4px 0 #1f1e1d;
+    }
+
+    .person::after {
+      content: "";
+      position: absolute;
+      left: 24px;
+      top: 62px;
+      width: 130px;
+      height: 146px;
+      border-radius: 44px 44px 28px 28px;
+      background: #222;
+      box-shadow:
+        -34px 96px 0 -30px #e15d46,
+        60px 106px 0 -36px #e15d46,
+        -42px 135px 0 -30px #222,
+        72px 140px 0 -34px #222;
+    }
+
+    .folder-grid {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
+
+    .f1 { left: 126px; top: 582px; }
+    .f2 { right: 128px; top: 248px; }
+    .f3 { left: 730px; top: 584px; }
+    .f4 { left: 160px; bottom: 234px; }
+    .f5 { right: 156px; bottom: 290px; }
+    .l1 { left: 116px; top: 726px; }
+    .l2 { right: 130px; top: 396px; }
+    .l3 { left: 702px; top: 724px; }
+    .l4 { left: 156px; bottom: 180px; }
+    .l5 { right: 142px; bottom: 234px; }
+
+    .cover .f1 { left: 116px; top: 662px; }
+    .cover .f2 { right: 178px; top: 194px; }
+    .cover .f3 { left: 716px; top: 524px; }
+    .cover .f4 { left: 120px; bottom: 166px; }
+    .cover .f5 { right: 142px; bottom: 290px; }
+    .cover .l1 { left: 122px; top: 852px; }
+    .cover .l2 { right: 172px; top: 344px; }
+    .cover .l3 { left: 696px; top: 666px; }
+    .cover .l4 { left: 120px; bottom: 108px; }
+    .cover .l5 { right: 126px; bottom: 236px; }
+
+    .tag-row {
+      position: absolute;
+      left: 78px;
+      right: 78px;
+      top: 770px;
+      z-index: 6;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      padding: 18px 24px;
+      border-radius: 999px;
+      background: rgba(255,250,241,0.78);
+      box-shadow: 0 14px 24px rgba(46,40,31,0.12);
+      color: #3b3530;
+      font-size: 30px;
+      font-weight: 820;
+      border: 1px solid rgba(255,255,255,0.76);
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 18px;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: #28231f;
+      font-size: 40px;
+      line-height: 1.2;
+      font-weight: 830;
+    }
+
+    .dot {
+      flex: 0 0 auto;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--blue);
+      box-shadow: inset 0 4px 0 rgba(255,255,255,0.25), 0 10px 18px rgba(46,40,31,0.12);
+    }
+
+    .dot.yellow { background: var(--yellow); }
+    .dot.green { background: var(--green); }
+    .dot.pink { background: var(--pink); }
+
+    .cover-chips {
+      position: absolute;
+      z-index: 6;
+      left: 74px;
+      bottom: 102px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .cover-chip {
+      width: max-content;
+      padding: 16px 22px;
+      border-radius: 12px;
+      color: #fffaf1;
+      background: #24211e;
+      font-size: 34px;
+      font-weight: 900;
+      box-shadow: 0 16px 26px rgba(46,40,31,0.18);
+    }
+
+    .mini-window {
+      position: absolute;
+      z-index: 4;
+      left: 152px;
+      right: 152px;
+      bottom: 180px;
+      min-height: 360px;
+      padding: 34px 40px;
+      border-radius: 28px;
+      background: rgba(255, 250, 241, 0.82);
+      box-shadow: 0 24px 50px rgba(46,40,31,0.16);
+      border: 1px solid rgba(255,255,255,0.76);
+    }
+
+    .window-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .window-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--pink);
+    }
+
+    .window-dot:nth-child(2) { background: var(--yellow); }
+    .window-dot:nth-child(3) { background: var(--green); }
+
+    .cursor {
+      position: absolute;
+      z-index: 6;
+      right: 230px;
+      bottom: 310px;
+      width: 0;
+      height: 0;
+      border-left: 28px solid #252525;
+      border-top: 46px solid transparent;
+      filter: drop-shadow(0 4px 3px rgba(0,0,0,0.25));
+      transform: rotate(-16deg);
+    }
+
+    .question-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin-top: 22px;
+    }
+
+    .question {
+      min-height: 112px;
+      padding: 26px 22px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.56);
+      color: #29241f;
+      font-size: 34px;
+      line-height: 1.22;
+      font-weight: 900;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.82);
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <section class="card cover" id="card-01">
+      <div class="meta">MONDAYLAB / BUSINESS STRATEGY</div>
+      <div class="page">01 / 08</div>
+      <h1 class="title">
+        <span class="line">AI 媒体公司</span>
+        <span class="line">为什么需要</span>
+        <span class="line">远程撰稿人？</span>
+      </h1>
+      <p class="subtitle">热点太快，专业太细，全职太贵。内容能力开始变成一种组织能力。</p>
+      <div class="folder-grid">
+        <div class="folder yellow big f1"></div>
+        <div class="file-label l1">hot_topics<br>daily.file</div>
+        <div class="folder blue f2"></div>
+        <div class="file-label l2">ai_news<br>2026</div>
+        <div class="folder green f3"></div>
+        <div class="file-label l3">expert_pool<br>remote</div>
+        <div class="folder pink f5"></div>
+        <div class="file-label l5 selected">writers.folder</div>
+      </div>
+      <div class="person"></div>
+      <div class="desk"><div class="laptop"></div></div>
+      <div class="cover-chips">
+        <div class="cover-chip">热点太快</div>
+        <div class="cover-chip">专业太细</div>
+        <div class="cover-chip">全职太贵</div>
+      </div>
+      <footer class="footer"><span>2026-08-30</span><span>Day007</span></footer>
+    </section>
+
+    <section class="card" id="card-02">
+      <div class="meta">REMOTE CONTENT TEAM</div>
+      <div class="page">02 / 08</div>
+      <h2 class="title">AI 媒体每天要追的东西太多了</h2>
+      <div class="folder blue f2"></div>
+      <div class="file-label l2">updates<br>today</div>
+      <div class="folder yellow f4"></div>
+      <div class="file-label l4">model.news</div>
+      <div class="panel">
+        <p class="panel-title">问题从信息量开始</p>
+        <p class="panel-text">新模型、论文、开源项目、融资消息、公司动态、技术路线变化，几乎每天都在更新。</p>
+      </div>
+      <footer class="footer"><span>AI 媒体公司，为什么需要远程撰稿人？</span><span>02</span></footer>
+    </section>
+
+    <section class="card" id="card-03">
+      <div class="meta">COVERAGE GAP</div>
+      <div class="page">03 / 08</div>
+      <h2 class="title medium">
+        <span class="line">靠内部全职作者，</span>
+        <span class="line">很难全覆盖</span>
+      </h2>
+      <div class="body">
+        <p>AI 领域太分散。</p>
+        <p><strong>每个方向都有自己的知识门槛。</strong></p>
+      </div>
+      <div class="tag-row">
+        <span class="tag">大模型</span>
+        <span class="tag">机器人</span>
+        <span class="tag">芯片</span>
+        <span class="tag">AI Agent</span>
+        <span class="tag">企业服务</span>
+      </div>
+      <div class="folder green f5"></div>
+      <div class="file-label l5">beat_map<br>specialized</div>
+      <footer class="footer"><span>不同赛道，需要不同判断力</span><span>03</span></footer>
+    </section>
+
+    <section class="card" id="card-04">
+      <div class="meta">COST STRUCTURE</div>
+      <div class="page">04 / 08</div>
+      <h2 class="title medium">
+        <span class="line">每个方向都招全职作者，</span>
+        <span class="line">成本会很重</span>
+      </h2>
+      <div class="mini-window">
+        <div class="window-bar"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span></div>
+        <p class="panel-text">公司需要专业覆盖，也需要更轻的作者组织方式。</p>
+      </div>
+      <div class="folder yellow f1"></div>
+      <div class="file-label l1">full_time<br>cost</div>
+      <div class="cursor"></div>
+      <footer class="footer"><span>成本不是只看稿费，而是看组织方式</span><span>04</span></footer>
+    </section>
+
+    <section class="card" id="card-05">
+      <div class="meta">REMOTE WRITERS</div>
+      <div class="page">05 / 08</div>
+      <h2 class="title">远程撰稿人可以补上专业空位</h2>
+      <div class="panel">
+        <p class="panel-title">远程不是松散，是把外部能力接进来</p>
+        <div class="list">
+          <div class="list-item"><span class="dot blue"></span><span>外部专家提供判断</span></div>
+          <div class="list-item"><span class="dot yellow"></span><span>自由撰稿人覆盖话题</span></div>
+          <div class="list-item"><span class="dot green"></span><span>兼职编辑协助节奏和质量</span></div>
+        </div>
+      </div>
+      <div class="folder pink f3"></div>
+      <div class="file-label l3 selected">writer_pool</div>
+      <footer class="footer"><span>重点是专业能力如何被组织</span><span>05</span></footer>
+    </section>
+
+    <section class="card" id="card-06">
+      <div class="meta">EDITORIAL SYSTEM</div>
+      <div class="page">06 / 08</div>
+      <h2 class="title">作者可以远程，标准不能远程</h2>
+      <div class="body small">
+        <p>远程协作越多，越需要清楚的内容管理方式。</p>
+      </div>
+      <div class="panel">
+        <div class="list">
+          <div class="list-item"><span class="dot blue"></span><span>选题标准</span></div>
+          <div class="list-item"><span class="dot yellow"></span><span>事实核查</span></div>
+          <div class="list-item"><span class="dot green"></span><span>编辑口径</span></div>
+          <div class="list-item"><span class="dot pink"></span><span>质量要求</span></div>
+        </div>
+      </div>
+      <footer class="footer"><span>人可以分布，标准要集中</span><span>06</span></footer>
+    </section>
+
+    <section class="card" id="card-07">
+      <div class="meta">STRATEGY SENTENCE</div>
+      <div class="page">07 / 08</div>
+      <h2 class="title">
+        <span class="line">一句英文，</span>
+        <span class="line">讲清楚策略判断</span>
+      </h2>
+      <div class="panel">
+        <p class="quote">Flexible working can help AI media companies produce more diverse content, but they need clear editorial standards to maintain quality.</p>
+        <p class="translation">远程协作能扩大内容供给，但编辑标准决定内容质量。</p>
+      </div>
+      <div class="folder blue f2"></div>
+      <div class="file-label l2">strategy<br>sentence</div>
+      <footer class="footer"><span>表达结构：benefit + condition</span><span>07</span></footer>
+    </section>
+
+    <section class="card" id="card-08">
+      <div class="meta">OPEN QUESTIONS</div>
+      <div class="page">08 / 08</div>
+      <h2 class="title">
+        <span class="line">AI 媒体真正要想清楚的</span>
+        <span class="line">4 个问题</span>
+      </h2>
+      <div class="mini-window">
+        <div class="window-bar"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span></div>
+        <div class="question-grid">
+          <div class="question">谁来写？</div>
+          <div class="question">怎么审？</div>
+          <div class="question">成本怎么控？</div>
+          <div class="question">质量怎么守住？</div>
+        </div>
+      </div>
+      <div class="folder yellow f1"></div>
+      <div class="file-label l1">next<br>questions</div>
+      <div class="folder green f5"></div>
+      <div class="file-label l5">content<br>system</div>
+      <footer class="footer"><span>远程撰稿人背后，是内容系统设计</span><span>08</span></footer>
+    </section>
+  </main>
+</body>
+</html>
