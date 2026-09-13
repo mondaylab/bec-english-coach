@@ -10,7 +10,7 @@
 
 ## 当前训练状态
 
-- 当前 Day：Day 007
+- 当前 Day：Day 008
 - 当前辅助等级：Level 1
 - 当前训练阶段：先给参考答案，再模仿和替换；商业策略迁移部分改为整段表达后统一反馈
 
@@ -34,6 +34,10 @@
 - AI topic change quickly -> AI topics change quickly
 - can afford -> cannot afford
 - work life balance -> work-life balance
+- quiter -> quieter
+- Over all -> Overall
+- follow up -> follow-up
+- turn discuss into results -> turn discussion into results
 
 ## 常用表达
 
@@ -59,10 +63,17 @@
 - freelance writers
 - editorial standards
 - content quality
+- a clear agenda
+- active participation
+- specific action points
+- assign a clear owner
+- set specific deadlines
+- clear follow-up
+- turn discussion into results
 
 ## 复练重点
 
-- Part 2 继续使用 factor + reason + example + overall 结构。
+- Day 009 进入 Part 1，使用“直接回答 + 理由 + 例子”组织 30-45 秒短答。
 - 商业策略迁移不逐句卡练，先整段表达，再统一纠错和升级。
 - 公众号标题优先使用具体场景和读者问题，例如“办公产品出海，最难的可能不是做英文版”。
-- 新型工作方式主题继续注意否定词和复数，不要让 can / cannot 或 topic / topics 改变商业意思。
+- 继续注意词性变化，尤其是 `discuss` / `discussion`；复练 `turn + noun + into + noun`。
